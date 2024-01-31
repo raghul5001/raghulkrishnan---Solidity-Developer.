@@ -1,0 +1,75 @@
+{
+    "contractName": "TokenAirdrop",
+    "abi": [
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          }
+        ],
+        "stateMutability": "nonpayable",
+        "type": "constructor"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "tokenAddress",
+            "type": "address"
+          }
+        ],
+        "name": "setToken",
+        "outputs": [],
+        "stateMutability": "external",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "address[]",
+            "name": "recipients",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "amount",
+            "type": "uint256"
+          }
+        ],
+        "name": "executeAirdrop",
+        "outputs": [],
+        "stateMutability": "external",
+        "type": "function"
+      },
+      {
+        "inputs": [
+          {
+            "internalType": "uint256",
+            "name": "newAmount",
+            "type": "uint256"
+          }
+        ],
+        "name": "modifyAirdropAmount",
+        "outputs": [],
+        "stateMutability": "external",
+        "type": "function"
+      }
+    ],
+    "networks": {
+      "1": {
+        "address": "0x123abc...",
+        "transactionHash": "0x456def...",
+        "links": {}
+      },
+      "3": {
+        "address": "0x789ghi...",
+        "transactionHash": "0x101112...",
+        "links": {}
+      }
+    },
+    "schemaVersion": "3.0.0",
+    "updatedAt": "2024-01-31T00:00:00.000Z"
+  }
+  
